@@ -1,0 +1,46 @@
+[project]
+name = "betrDB"
+version = "0.1.0"
+description = "A sports db utilizing postgres, fastapi, and docker to allow sports data to be saved and accessed by a machine learning model throughout the lifecycle of the application"
+authors = [
+    {name = "ReAXET", email = "joshua.sturm@outlook.com"},
+]
+dependencies = [
+    "fastapi>=0.108.0",
+    "sqlalchemy>=2.0.23",
+    "psycopg2-binary>=2.9.9",
+    "asyncpg>=0.29.0",
+    "redis>=5.0.1",
+    "alembic>=1.13.1",
+    "asyncer>=0.0.2",
+    "typer>=0.9.0",
+    "rich>=13.7.0",
+    "click>=8.1.7",
+    "python-dotenv>=1.0.0",
+    "pandas>=2.1.4",
+    "isort>=5.13.2",
+    "nba-api>=1.4.1",
+    "tqdm>=4.66.1",
+    "pydantic-core>=2.14.6",
+    "pydantic-settings>=2.1.0",
+    "pydantic-extra-types>=2.2.0",
+    "loguru>=0.7.2",
+    "celery>=5.3.6",
+    "email-validator>=2.1.0.post1",
+    "phonenumbers>=8.13.27",
+    "scrapy>=2.11.0",
+    "selenium>=4.16.0",
+    "nhl-api>=0.0.1",
+    "questdb>=1.2.0",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+package-type = "library"

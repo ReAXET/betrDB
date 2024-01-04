@@ -1,0 +1,6 @@
+module default {
+    type Player {
+        
+    }
+
+}
